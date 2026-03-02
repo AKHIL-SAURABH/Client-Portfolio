@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams } from "react-router-dom"
+import { useParams, Navigate } from "react-router-dom"
 import Navbar from "../components/Navbar"
 import { projects } from "../data/projects"
 import Projects from '../components/Projects'
@@ -12,13 +12,13 @@ function ProjectDetails() {
   )
 
   if (!currentProject) {
-    return <div>Project not found</div>
+    return <Navigate to="/" replace />
   }
 
   return (
     <>
-    <Navbar />
-    <Projects project={currentProject} />
+      <Navbar />
+      <Projects project={currentProject} />
     </>
 
   )

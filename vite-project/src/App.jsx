@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route, Navigate } from "react-router-dom"
 import Landing from './pages/LandingPage'
 import ProjectDetails from './pages/ProjectDetails'
 import './App.css'
@@ -9,6 +9,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/projects/:slug" element={<ProjectDetails />} />
+        {/* /projects/ with no slug → home */}
+        <Route path="/projects/" element={<Navigate to="/" replace />} />
+        <Route path="/projects" element={<Navigate to="/" replace />} />
+        {/* Any other unmatched URL → home */}
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </>
   )
