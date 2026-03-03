@@ -9,10 +9,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/projects/:slug" element={<ProjectDetails />} />
-        {/* /projects/ with no slug → home */}
         <Route path="/projects/" element={<Navigate to="/" replace />} />
         <Route path="/projects" element={<Navigate to="/" replace />} />
-        {/* Any other unmatched URL → home */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </>

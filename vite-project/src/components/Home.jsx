@@ -26,7 +26,7 @@ function Home() {
   return (
     <div
       id="home"
-      className="min-h-screen pt-10 bg-black text-white flex justify-center items-center"
+      className="min-h-screen pt-50 bg-black text-white flex justify-center items-center"
     >
       <div className="relative pr-70 pt-15">
 
@@ -62,7 +62,7 @@ function Home() {
             })}
           </div>
 
-          <div className="z-10">
+          <div className="object-cover z-10">
             <img src={name} alt="name"/>
           </div>
         </div>

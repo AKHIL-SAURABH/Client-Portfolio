@@ -1,4 +1,5 @@
 import { React, useState, useEffect, useRef } from 'react'
+import { useNavigate, useLocation } from 'react-router-dom'
 import logo from '../assets/logo.png'
 
 const roles = [
@@ -7,11 +8,24 @@ const roles = [
 ]
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      // Element doesn't exist on this page — navigate to landing page with hash
+      navigate('/#' + id);
+    }
+  };
+
+  const handleLogoClick = () => {
+    if (location.pathname === '/') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      navigate('/');
     }
   };
 
@@ -75,7 +89,7 @@ const Navbar = () => {
         }
       }}
     >
-      <div className='logo cursor-pointer' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+      <div className='logo cursor-pointer' onClick={handleLogoClick}>
         <img src={logo} alt="logo" />
       </div>
 

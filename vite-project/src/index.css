@@ -8,6 +8,7 @@
 
 body {
   font-family: var(--font-satoshi);
+  zoom: 0.9;
 }
 
 html {

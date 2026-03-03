@@ -58,7 +58,7 @@ function Contact() {
                     <div className="grid grid-cols-1 mb-16">
                         <div className="flex flex-row gap-5">
                             {/* <h1 className="text-8xl font-bold">Lets Connect</h1> */}
-                            <img src={heading} alt="" />
+                            <img className='h-20' src={heading} alt="heading" />
                             <img className="mt-10" src={arrow} alt="arrow" />
                         </div>
                     </div>
