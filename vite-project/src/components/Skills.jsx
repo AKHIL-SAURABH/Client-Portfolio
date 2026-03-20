@@ -8,6 +8,7 @@ function Skills() {
   const Programming = ["Python", "Java", "C++"];
   const ML = ["TensorFlow", "Keras", "Scikit-Learn", "Computer Vision", "Neural Networks"];
   const Data = ["Pandas", "NumPy", "Matplotlib", "Seaborn", "Power BI"];
+   const AI = ["RAG", "LLM", "LangGrapgh", "LangChain", "Prompt Engg."];
   const Tools = ["Git", "GitHub", "Google Colab", "VS Code", "Jupyter", "Anaconda"];
   const Databases = ["SQL", "PostgreSQL"];
   const Backend = ["FastAPI", "Django"];
@@ -32,7 +33,7 @@ function Skills() {
         </div>
 
         <div className="grid grid-cols-4 gap-8">
-          <div className="col-start-2 col-span-1 p-6 border border-white/20 rounded-xl bg-transparent backdrop-blur-xs shadow-[inset_5px_2px_20px_rgba(255,255,255,0.1)]">
+          <div className="col-start-1 col-span-1 p-6 border border-white/20 rounded-xl bg-transparent backdrop-blur-xs shadow-[inset_5px_2px_20px_rgba(255,255,255,0.1)]">
             <h3 className="text-2xl font-bold mb-4 italic">Programming</h3>
             <ul className="space-y-2 text-xl font-medium">
               {Programming.map((item, index) => (
@@ -44,6 +45,18 @@ function Skills() {
             </ul>
           </div>
 
+          <div className="col-start-2 col-span-1 p-6 border border-white/20 rounded-xl bg-transparent backdrop-blur-xs shadow-[inset_5px_2px_20px_rgba(255,255,255,0.1)]">
+            <h3 className="text-2xl font-bold mb-4 italic">Artificial Intelligence</h3>
+            <ul className="space-y-2 text-xl font-medium">
+              {AI.map((item, index) => (
+                <li key={index} className="flex items-center gap-2">
+                  <span className="text-white/80">✦</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+          
           <div className="col-start-3 col-span-1 p-6 border border-white/20 rounded-xl bg-transparent backdrop-blur-xs shadow-[inset_5px_2px_20px_rgba(255,255,255,0.1)]">
             <h3 className="text-2xl font-bold mb-4 italic">ML / Deep Learning</h3>
             <ul className="space-y-2 text-xl font-medium">
