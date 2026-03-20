@@ -5,12 +5,12 @@ import skill from "../assets/Skills.png"
 
 function Skills() {
 
-  const Programming = ["Python", "Java", "C"];
-  const ML = ["TensorFlow", "Keras", "Scikit-Learn", "LLM", "Neural Networks"];
-  const Data = ["Pandas", "NumPy", "Power BI", "EDA", "Data Visualization"];
-  const Tools = ["Git", "GitHub", "Google Colab", "VS Code", "Jupyter", "Flask"];
-  const Databases = ["SQL", "MongoDB"];
-  const Backend = ["FastAPI", "RestAPI"];
+  const Programming = ["Python", "Java", "C++"];
+  const ML = ["TensorFlow", "Keras", "Scikit-Learn", "Computer Vision", "Neural Networks"];
+  const Data = ["Pandas", "NumPy", "Matplotlib", "Seaborn", "Power BI"];
+  const Tools = ["Git", "GitHub", "Google Colab", "VS Code", "Jupyter", "Anaconda"];
+  const Databases = ["SQL", "PostgreSQL"];
+  const Backend = ["FastAPI", "Django"];
 
   return (
     <div
