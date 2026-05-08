@@ -40,7 +40,13 @@ function About() {
 
                         {/* Original Text */}
                         <span className="block transition-transform duration-350 ease-[cubic-bezier(0.65,0,0.35,1)] group-hover:-translate-y-full">
-                        Resume
+                            <a 
+                              href="https://drive.google.com/file/d/170DnrqjQcCHb4UQB-MUou4D3MzNidXVt/view?usp=sharing"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              Resume
+                            </a>
                         </span>
 
                         {/* Duplicate Text */}
