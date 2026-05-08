@@ -34,7 +34,13 @@ function About() {
 
                 </div>
 
-                <button className="group bg-white text-black self-baseline h-12 w-45 overflow-hidden relative flex items-center justify-center">
+                <a
+                  href="https://drive.google.com/file/d/170DnrqjQcCHb4UQB-MUou4D3MzNidXVt/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+
+                  <button className="group bg-white text-black self-baseline h-12 w-45 overflow-hidden relative flex items-center justify-center">
 
                     <div className="relative overflow-hidden leading-none">
 
@@ -50,7 +56,8 @@ function About() {
 
                     </div>
 
-                </button>
+                  </button>
+                </a>
             </div>
         </div>
     </div>
